@@ -8,7 +8,7 @@ import Resume from "../Resume";
 import { render } from "@testing-library/react";
 
 function Header() {
-  const [currentPage, pageHandle] = useState("About");
+  const [currentPage, pageHandler] = useState("About");
 
   const renderPage = () => {
     switch (currentPage) {
@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <div>
-        <Navigation currentPage={currentPage} pageHandle={pageHandle} />
+        <Navigation currentPage={currentPage} pageHandler={pageHandler} />
         <div>
             {
                 renderPage()
@@ -35,6 +35,6 @@ function Header() {
         </div>
     </div>
   )
-}
+};
 
 export default Header;

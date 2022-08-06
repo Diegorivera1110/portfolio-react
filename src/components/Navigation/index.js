@@ -1,39 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
 // import { capitalizeFirstLetter } from "../../../utils/helpers";
 
-function Nav() {
-    // const {
-    //     categories = [],
-    //     setCurrentCategory,
-    //     contactSelected,
-    //     currentCategory,
-    //     setContactSelected,
-    // } = props;
-
-    // useEffect(() => {
-    //     document.title = capitalizeFirstLetter(currentCategory.name);
-    // }, [currentCategory]);
-
-    return(
-        <header className="flex-row px-1">
-            <h2>
-                <a herf="/">
-                    <span role="img">
-
-                    </span>
-                    Diego Rivera
-                </a>
-            </h2>
-
-            <nav>
-                <ul className="flex-row">
-                    <li className={`mx-2 ${contactSelected && "navActive"}`}>
-                        <a href="#about" onClick={() => setContactSelected(false)}>About Me</a>
-                    </li>
-
-                </ul>
-            </nav>
-        </header>
+function Navigation(props) {
+    const pages = ["about", "project", "contact", "resume"];
+    
+    return (
+        <ul className="nav">
+            {pages.map(page => (
+                <li className="" key={tab}>
+                    <a
+                    href={'#' + page.toLowerCase()}
+                    onClick={() => props.pageHandler(page)}
+                    >
+                        {page}
+                    </a>
+                </li>
+            ))}
+        </ul>
     )
 }
 
