@@ -5,7 +5,7 @@ import About from "../About";
 import Project from "../Project";
 import Contact from "../Contact";
 import Resume from "../Resume";
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 
 function Header() {
   const [currentPage, pageHandler] = useState("About");

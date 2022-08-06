@@ -7,12 +7,16 @@ import Header from "./components/Header";
 // import Project from './components/Project';
 // import About from './components/About';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <div>
         <Header></Header>
+      </div>
+      <div>
+        <Footer></Footer>
       </div>
     </>
   );

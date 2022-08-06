@@ -3,12 +3,14 @@ import profilePic from "../../assets/images/profilePic.jpg";
 
 function About() {
   return (
-    <section className="my-5">
-      <div className="row justify-content-center">
-        <img src={profilePic} className="profiel-picture" />
-        <h3>Diego Rivera</h3>
-        <h4>Full Stack Software Engineer</h4>
-        <p>
+    <section className="my-5 title">
+      <div className="row justify-content-center" id="about-container">
+        <div className="mb-5 col-3">
+        <img src={profilePic} className="profile-picture" />
+        </div>
+        <h3 className="name">Diego Rivera</h3>
+        <h4 className="job">Full Stack Software Engineer</h4>
+        <p className="education">
           My name is Diego Rivera and I am from Sacramento, California. I am a
           Full-Stack Engineer with skills in using HTML, CSS, JavaScript,
           JQuery, Node.js, MySQL, and ORM. In my spare time I do enjoy reading,
