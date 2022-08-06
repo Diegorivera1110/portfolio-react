@@ -7,7 +7,7 @@ function Navigation(props) {
   return (
     <ul className="nav">
       {pages.map((page) => (
-        <li className="" key={tab}>
+        <li className="" key={page}>
           <a
             href={"#" + page.toLowerCase()}
             onClick={() => props.pageHandler(page)}
