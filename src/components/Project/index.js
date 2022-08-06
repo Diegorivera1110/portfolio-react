@@ -1,5 +1,61 @@
 import React from "react";
+import projects from "../../projects.json";
 
+function ProjectModel(props) {
+  return (
+    <div className="card">
+      <div className="image-container">
+        <img alt={props.name} src={props.image} />
+      </div>
+      <div className="content">
+        <ul>
+            <li>
+                <p className="project-title">{props.name}</p>
+            </li>
+            <li>
+                <p className="description">{props.description}</p>
+            </li>
+            <li>
+                <div className="icons">
+                <a href={props.github}><img src="https://img.icons8.com/ios/40/000000/github.png" alt="github-icon" id="port-icon"/></a> 
+              <a href={props.deployedapp}><img src="https://img.icons8.com/metro/35/000000/cursor.png" alt="app-icon" id="port-icon"/></a> 
+                </div>
+            </li>
+            <li>
+                {props.languages}
+            </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
 
+function Format(props) {
+    return <div className="wrapping">{props.children}</div>
+}
+
+function Projects() {
+    return (
+        <>
+        <div className="project">
+        <h2 className="page-title">Projects</h2>
+        </div>
+
+        <Format>
+            {projects.map((project) => (
+                <ProjectModel
+                name={project.name}
+                key={project.id}
+                image={project.image}
+                github={project.github}
+                url={project.url}
+                languages={project.languages}
+                description={project.description}
+                />
+                ))}
+        </Format>
+        </>
+    );
+}
 
 export default Project;

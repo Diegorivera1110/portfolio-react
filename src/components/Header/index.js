@@ -19,22 +19,18 @@ function Header() {
       case "contact":
         return <Contact></Contact>;
       case "resume":
-        <Resume></Resume>
-        default: 
-        return <About></About>
+        <Resume></Resume>;
+      default:
+        return <About></About>;
     }
   };
 
   return (
     <div>
-        <Navigation currentPage={currentPage} pageHandler={pageHandler} />
-        <div>
-            {
-                renderPage()
-            }
-        </div>
+      <Navigation currentPage={currentPage} pageHandler={pageHandler} />
+      <div>{renderPage()}</div>
     </div>
-  )
-};
+  );
+}
 
 export default Header;
