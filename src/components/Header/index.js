@@ -1,29 +1,40 @@
-import React, { Component } from "react";
-import { Route, Redirect, HashRouter } from "react-router-dom";
+import React, { useState } from "react";
+// import { Route, Redirect, HashRouter } from "react-router-dom";
 import Navigation from "../Navigation";
 import About from "../About";
 import Project from "../Project";
 import Contact from "../Contact";
+import Resume from "../Resume";
+import { render } from "@testing-library/react";
 
+function Header() {
+  const [currentPage, pageHandle] = useState("About");
 
-
-class Header extends Component {
-    Header() {
-        return (
-            <HashRouter>
-                <header>
-                    <Navigation />
-                </header>
-
-                <div className="page">
-                    <Route exact path="/" render={() => <Redirect to="/about" />} />
-                    <Route path="/about" component={About}></Route>
-                    <Route path="/contact" component={Contact}></Route>
-                    <Route path="/project" component={Project}></Route>
-                </div>
-            </HashRouter>
-        )
+  const renderPage = () => {
+    switch (currentPage) {
+      case "about":
+        return <About></About>;
+      case "project":
+        return <Project></Project>;
+      case "contact":
+        return <Contact></Contact>;
+      case "resume":
+        <Resume></Resume>
+        default: 
+        return <About></About>
     }
+  };
+
+  return (
+    <div>
+        <Navigation currentPage={currentPage} pageHandle={pageHandle} />
+        <div>
+            {
+                renderPage()
+            }
+        </div>
+    </div>
+  )
 }
 
 export default Header;
