@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../../utils/helpers";
+// import { capitalizeFirstLetter } from "../../../utils/helpers";
 
-function Nav(props) {
-    const {
-        categories = [],
-        setCurrentCategory,
-        contactSelected,
-        currentCategory,
-        setContactSelected,
-    } = props;
+function Nav() {
+    // const {
+    //     categories = [],
+    //     setCurrentCategory,
+    //     contactSelected,
+    //     currentCategory,
+    //     setContactSelected,
+    // } = props;
 
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
+    // useEffect(() => {
+    //     document.title = capitalizeFirstLetter(currentCategory.name);
+    // }, [currentCategory]);
 
     return(
         <header className="flex-row px-1">
@@ -27,6 +27,9 @@ function Nav(props) {
 
             <nav>
                 <ul className="flex-row">
+                    <li className={`mx-2 ${contactSelected && "navActive"}`}>
+                        <a href="#about" onClick={() => setContactSelected(false)}>About Me</a>
+                    </li>
 
                 </ul>
             </nav>
