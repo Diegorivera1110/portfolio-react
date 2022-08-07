@@ -2,7 +2,7 @@ import React from "react";
 // import { capitalizeFirstLetter } from "../../../utils/helpers";
 
 function Navigation(props) {
-  const pages = ["about", "project", "contact", "resume"];
+  const pages = ["About", "Project", "Contact", "Resume"];
 
   return (
     <ul className="nav">

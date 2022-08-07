@@ -48,7 +48,7 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label html="email">Email address:</label>
           <input
             type="email"
             name="email"

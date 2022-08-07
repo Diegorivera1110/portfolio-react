@@ -12,13 +12,13 @@ function Header() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case "about":
+      case "About":
         return <About></About>;
-      case "project":
+      case "Project":
         return <Project></Project>;
-      case "contact":
+      case "Contact":
         return <Contact></Contact>;
-      case "resume":
+      case "Resume":
         <Resume></Resume>;
       default:
         return <About></About>;

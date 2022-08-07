@@ -5,8 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProjectModel(props) {
   return (
-    <div className="card col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
-      <div className="image-container">
+    <div className="card">
+      <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
       <div className="content">
