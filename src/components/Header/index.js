@@ -19,7 +19,7 @@ function Header() {
       case "Contact":
         return <Contact></Contact>;
       case "Resume":
-        <Resume></Resume>;
+        return <Resume></Resume>;
       default:
         return <About></About>;
     }
