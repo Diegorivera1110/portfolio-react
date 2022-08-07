@@ -1,9 +1,11 @@
 import React from "react";
 import projects from "../../projects.json";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function ProjectModel(props) {
   return (
-    <div className="card">
+    <div className="card col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
       <div className="image-container">
         <img alt={props.name} src={props.image} />
       </div>
@@ -18,7 +20,7 @@ function ProjectModel(props) {
             <li>
                 <div className="icons">
                 <a href={props.github}><img src="https://img.icons8.com/ios/40/000000/github.png" alt="github-icon" id="port-icon"/></a> 
-              <a href={props.deployedapp}><img src="https://img.icons8.com/metro/35/000000/cursor.png" alt="app-icon" id="port-icon"/></a> 
+              <a href={props.url}><img src="https://img.icons8.com/small/32/000000/external-link.png"/></a> 
                 </div>
             </li>
             <li>

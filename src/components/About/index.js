@@ -13,7 +13,7 @@ function About() {
         <p className="education">
           My name is Diego Rivera and I am from Sacramento, California. I am a
           Full-Stack Engineer with skills in using HTML, CSS, JavaScript,
-          JQuery, Node.js, MySQL, and ORM. In my spare time I do enjoy reading,
+          JQuery, Node.js, MySQL, and OOP. In my spare time I do enjoy reading,
           video games, and developing personal projects. In the top left are
           links to my Github and LinkedIn if you have any other questions or
           inquiries so feel free to reach out anytime. Have a great day!

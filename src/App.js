@@ -12,10 +12,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div>
+      <div id="main">
         <Header></Header>
-      </div>
-      <div>
         <Footer></Footer>
       </div>
     </>
