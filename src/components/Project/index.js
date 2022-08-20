@@ -7,7 +7,7 @@ function ProjectModel(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <a target="_blank" href={props.github} ><img alt={props.name} src={props.image} /></a>
       </div>
       <div className="content">
         <ul>
