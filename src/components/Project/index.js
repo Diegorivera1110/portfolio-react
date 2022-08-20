@@ -1,13 +1,14 @@
 import React from "react";
 import projects from "../../projects.json";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Card from 'react-bootstrap/Card';
 
 
 function ProjectModel(props) {
   return (
-    <div className="card">
+    <Card style={{ width: '27rem' }}>
       <div className="img-container">
-        <a target="_blank" href={props.github} ><img alt={props.name} src={props.image} /></a>
+        <a target="_blank" href={props.github} ><Card.Img alt={props.name} src={props.image} /></a>
       </div>
       <div className="content">
         <ul>
@@ -28,7 +29,7 @@ function ProjectModel(props) {
             </li>
         </ul>
       </div>
-    </div>
+    </Card>
   );
 }
 

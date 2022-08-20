@@ -9,8 +9,8 @@ function About() {
         <img src={profilePic} id="profile-picture" />
         </div>
         <div className="col-9">
-        <h3 className="name">Diego Rivera</h3>
-        <h4 className="job">Full Stack Software Engineer</h4>
+        <h2 className="name">Diego Rivera</h2>
+        <h3 className="job">Full Stack Software Engineer</h3>
         <p className="education">
           My name is Diego Rivera and I am from Sacramento, California. I am a
           Full-Stack Engineer with skills in using HTML, CSS, JavaScript,

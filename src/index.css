@@ -4,6 +4,25 @@ body {
   min-height: 100%;
 }
 
+.navButton {
+  border-radius: 20%;
+  
+}
+
+.nav li {
+  padding: 10px 15px;
+  background-color: #f79c76dc;
+
+}
+
+.nav li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  border-radius: 45%;
+}
+
+
 #main {
   background-color: #40afafa9;
 
@@ -44,19 +63,6 @@ padding: 50px;
 #about-container, #image-container, .education-container {
   margin: 0px 10px;
 } */
-
-
-.nav li {
-  padding: 10px 20px;
- 
-}
-
-.nav li a {
-  text-decoration: none;
-  font-weight: 600;
-}
-
-
 
 
 .card {
@@ -105,7 +111,7 @@ padding: 50px;
   padding-top: 50px;
   height: 100%;
   display: flex;
-  flex-flow: row;
+  /* flex-flow: row; */
   padding: 20px;
   justify-content: space-around;
   align-content: flex-start;
@@ -222,17 +228,18 @@ padding: 50px;
   .image {
     width: 200%;
     height: 100%;
+    padding: 15px 15px;
   }
 
   .name {
     font-size: 35px;
-    color: #660033;
+    color: black;
     letter-spacing: normal;
   }
   
   .job {
     font-size: 30px;
-    color: #660033;
+    color: black;
   }
 
   .nav {
