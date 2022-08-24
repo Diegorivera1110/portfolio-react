@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
+import { withRouter } from 'react-router-dom';
 import projects from "../../projects.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from 'react-bootstrap/Card';
@@ -6,11 +7,12 @@ import Card from 'react-bootstrap/Card';
 
 function ProjectModel(props) {
   return (
+
     <Card style={{ width: '27rem' }}>
       <div className="img-container">
         <a target="_blank" href={props.github} ><Card.Img alt={props.name} src={props.image} /></a>
       </div>
-      <div className="content">
+      <div className="content" style={{flex: 1}} >
         <ul>
             <li>
                 <p className="project-title">{props.name}</p>
@@ -30,6 +32,7 @@ function ProjectModel(props) {
         </ul>
       </div>
     </Card>
+
   );
 }
 

@@ -40,7 +40,7 @@ function Resume() {
                 </Col>
         
             <Col lg={4} md={12}>
-            <h2 class="resume">BACK END PROFICIENCIES</h2>
+            <h2 className="resume">BACK END PROFICIENCIES</h2>
                 <ul>
                     <li>
                         Node.js
