@@ -6,6 +6,7 @@ import Project from "../Project";
 import Contact from "../Contact";
 import Resume from "../Resume";
 // import { render } from "@testing-library/react";
+// import Particle from "../Particle";
 
 function Header() {
   const [currentPage, pageHandler] = useState("About");
@@ -27,6 +28,7 @@ function Header() {
 
   return (
     <div>
+      {/* <Particle /> */}
       <Navigation currentPage={currentPage} pageHandler={pageHandler} />
       <div>{renderPage()}</div>
     </div>

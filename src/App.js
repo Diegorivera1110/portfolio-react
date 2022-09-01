@@ -10,6 +10,7 @@ import Preloader from "../src/components/Pre";
 // import About from './components/About';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
+// import Particle from './components/Particle';
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -25,6 +26,7 @@ function App() {
   return (
     
     <>
+    {/* <Particle /> */}
     <Preloader load={load} />
       <div id="main">
         
