@@ -1,13 +1,11 @@
 // import logo from './logo.svg';
 import React, { useState, useEffect } from "react";
-import Footer from './components/Footer';
 // import Header from "./components/Header";
-import Preloader from "../src/components/Pre";
-import Navigation from './components/Navigation';
+// import Preloader from "../src/components/Pre";
 import Project from './components/Project';
 import About from './components/About';
 import Footer from "./components/Footer";
-import Navigation from './components/Navigation';
+// import Navigation from './components/Navigation';
 import Resume from './components/Resume';
 
 import './App.css';
