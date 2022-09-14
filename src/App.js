@@ -1,16 +1,24 @@
 // import logo from './logo.svg';
-import './App.css';
-// import "./index.css";
 import React, { useState, useEffect } from "react";
-// import Footer from './components/Footer';
-import Header from "./components/Header";
+import Footer from './components/Footer';
+// import Header from "./components/Header";
 import Preloader from "../src/components/Pre";
-// import Navigation from './components/Navigation';
-// import Project from './components/Project';
-// import About from './components/About';
-import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from './components/Navigation';
+import Project from './components/Project';
+import About from './components/About';
 import Footer from "./components/Footer";
 import Navigation from './components/Navigation';
+import Resume from './components/Resume';
+
+import './App.css';
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate
+} from 'react-router-dom';
 
 function App() {
   const [load, updateLoad] = useState(true);
