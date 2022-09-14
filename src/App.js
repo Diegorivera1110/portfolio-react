@@ -10,6 +10,7 @@ import Preloader from "../src/components/Pre";
 // import About from './components/About';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
+import Navigation from './components/Navigation';
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -23,15 +24,31 @@ function App() {
   }, []);
 
   return (
-    
-    <>
-    <Preloader load={load} />
-      <div id="main">
+    // ORIGINAL ROUTES 
+    // <>
+    // <Preloader load={load} />
+    //   <div id="main">
         
-        <Header></Header>
-        <Footer></Footer>
-      </div>
-    </>
+    //     <Header></Header>
+    //     <Footer></Footer>
+    //   </div>
+    // </>
+
+  // END ORIGINAL ROUTES
+
+  <Router>
+    {/* <Preloader load={load} /> */}
+    <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <Navigation />
+      <JumpToTop />
+
+      <Routes>
+        
+      </Routes>
+
+      <Footer />
+    </div>
+  </Router>
   );
 }
 
